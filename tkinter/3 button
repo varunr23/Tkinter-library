@@ -1,0 +1,12 @@
+from tkinter import *
+
+hi=Tk()
+
+def Click():
+    Label(hi,text="maybe not so useless").pack()
+
+#Button(hi,text="I'm useless",state=DISABLED,padx=50,pady=50).pack()
+
+Button(hi,text="I'm useless",command=Click,padx=50,pady=50,fg='blue',bg='black').pack()
+
+hi.mainloop()
